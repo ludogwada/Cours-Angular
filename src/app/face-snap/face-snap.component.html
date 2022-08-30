@@ -1,5 +1,5 @@
 <div class="snap-card" [ngClass]="{ snapped: buttonText === 'I liked' }">
-  <h2>{{ faceSnap.title }}</h2>
+  <h2>{{ faceSnap.title | uppercase }}</h2>
   <p>Mis en ligne le {{ faceSnap.createdDate }}</p>
   <img [src]="faceSnap.imgUrl" [alt]="faceSnap.title" />
   <p>{{ faceSnap.description }}</p>
